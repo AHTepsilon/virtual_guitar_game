@@ -1,0 +1,23 @@
+{
+  "name": "virtual_guitar_game",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000v\u0000i\u0000r\u0000t\u0000u\u0000a\u0000l\u0000_\u0000g\u0000u\u0000i\u0000t\u0000a\u0000r\u0000_\u0000g\u0000a\u0000m\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AHTepsilon/virtual_guitar_game.git"
+  },
+  "author": "Alejandro Hernandez, Laura Orozco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AHTepsilon/virtual_guitar_game/issues"
+  },
+  "homepage": "https://github.com/AHTepsilon/virtual_guitar_game#readme",
+  "dependencies": {
+    "p5": "^1.4.1",
+    "tone": "^14.7.77"
+  }
+}
