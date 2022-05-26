@@ -1,5 +1,7 @@
 let imgBg;
 
+let highEarr = [];
+
 function preload(){
   
 }
@@ -9,6 +11,8 @@ function setup() {
   loadImage("imgs/background1.png", imgBg => {
     image(imgBg, 0, 0);
   });
+
+  highEarr = [""]
 }
 
 function draw() {
