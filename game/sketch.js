@@ -14,6 +14,8 @@ let Garr = [];
 let Barr = [];
 let highEarr = [];
 
+let chordArr = [];
+
 let e2, f2, fs2, g2, gs2, a2, as2, b2, c3, cs3, d3, ds3, e3, f3, fs3, g3, gs3, a3;
 
 let sketch = new p5(function(p5){
@@ -45,7 +47,7 @@ let sketch = new p5(function(p5){
   }
   
   p5.draw = function draw() {
-    console.log(p5.mouseX + ", " + p5.mouseY);
+    //console.log(p5.mouseX + ", " + p5.mouseY);
   
     p5.loadImage("imgs/background1.png", imgBg => {
       p5.image(imgBg, interfaceX, interfaceY);
@@ -58,6 +60,11 @@ let sketch = new p5(function(p5){
     p5.fill(255, 0, 0, 25);
     changeCursor();
     p5.rectMode(p5.CENTER);
+
+    p5.textAlign(p5.CENTER);
+
+    p5.fill(0);
+    p5.text(chordArr, 543, 223);
   
     //Estos rectángulos muestran las sonas sensibles de la interfaz
   
@@ -113,6 +120,10 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("E2", "4n");
         }
+
+        else{
+          chordArr.push("E2");
+        }
   
       }
   
@@ -121,6 +132,10 @@ let sketch = new p5(function(p5){
         
         if(!isChordMode){
           e2.triggerAttackRelease("F2", "4n");
+        }
+        
+        else{
+          chordArr.push("F2");
         }
   
       }
@@ -132,6 +147,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("F#2", "4n");
           
         }
+        else{
+          chordArr.push("F#2");
+        }
   
       }
   
@@ -142,7 +160,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("G2", "4n");
           
         }
-  
+        else{
+          chordArr.push("G2");
+        }
       }
     
       if(p5.mouseX > 272 && p5.mouseX < 332){
@@ -151,6 +171,10 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("G#2", "4n");
           
+        }
+
+        else{
+          chordArr.push("G#2");
         }
   
       }
@@ -162,7 +186,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("A2", "4n");
           
         }
-  
+        else{
+          chordArr.push("A2");
+        }
       }
       
       if(p5.mouseX > 421 && p5.mouseX < 482){
@@ -172,7 +198,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("A#2", "4n");
           
         }
-  
+        else{
+          chordArr.push("A#2");
+        }
       }
   
       if(p5.mouseX > 497 && p5.mouseX < 557){
@@ -182,7 +210,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("B2", "4n");
           
         }
-  
+        else{
+          chordArr.push("B2");
+        }
       }
   
       if(p5.mouseX > 572 && p5.mouseX < 627){
@@ -192,7 +222,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("C3", "4n");
           
         }
-  
+        else{
+          chordArr.push("C3");
+        }
       }
   
       if(p5.mouseX > 643 && p5.mouseX < 702){
@@ -202,7 +234,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("C#3", "4n");
           
         }
-  
+        else{
+          chordArr.push("C#3");
+        }
       }
   
       if(p5.mouseX > 718 && p5.mouseX < 778){
@@ -211,13 +245,19 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("D3", "4n");
           
         }
+        else{
+          chordArr.push("D3");
+        }
       }
   
       if(p5.mouseX > 793 && p5.mouseX < 851){
         if(!isChordMode){
           
-                e2.triggerAttackRelease("D#3", "4n");
+          e2.triggerAttackRelease("D#3", "4n");
           
+        }
+        else{
+          chordArr.push("D#3");
         }
       }
   
@@ -228,7 +268,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("E3", "4n");
           
         }
-  
+        else{
+          chordArr.push("E3");
+        }
       } 
   
       if(p5.mouseX > 926 && p5.mouseX < 957){
@@ -238,7 +280,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("F3", "4n");
           
         }
-  
+        else{
+          chordArr.push("F3");
+        }
       } 
   
       if(p5.mouseX > 972 && p5.mouseX < 994){
@@ -246,6 +290,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("F#3", "4n");
           
+        }
+        else{
+          chordArr.push("F#3");
         }
       } 
   
@@ -255,6 +302,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("G3", "4n");
           
         }
+        else{
+          chordArr.push("G3");
+        }
       } 
       
       if(p5.mouseX > 1047 && p5.mouseX < 1075){
@@ -262,6 +312,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("G#3", "4n");
           
+        }
+        else{
+          chordArr.push("G#3");
         }
       } 
     }
@@ -274,6 +327,9 @@ let sketch = new p5(function(p5){
           
           e2.triggerAttackRelease("A2", "4n");
         }
+        else{
+          chordArr.push("A2");
+        }
       }
   
       if(p5.mouseX > 53 && p5.mouseX < 112){
@@ -281,6 +337,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("A#2", "4n");
           
+        }
+        else{
+          chordArr.push("A#2");
         }
       }
   
@@ -290,6 +349,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("B2", "4n");
           
         }
+        else{
+          chordArr.push("B2");
+        }
       }
   
       if(p5.mouseX > 199 && p5.mouseX < 260){
@@ -297,6 +359,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("C3", "4n");
           
+        }
+        else{
+          chordArr.push("C3");
         }
       }
     
@@ -306,6 +371,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("C#3", "4n");
           
         }
+        else{
+          chordArr.push("C#3");
+        }
       }
   
       if(p5.mouseX > 350 && p5.mouseX < 406){
@@ -313,6 +381,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("D3", "4n");
           
+        }
+        else{
+          chordArr.push("D3");
         }
       }
       
@@ -322,6 +393,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("D#3", "4n");
           
         }
+        else{
+          chordArr.push("D#3");
+        }
       }
   
       if(p5.mouseX > 497 && p5.mouseX < 557){
@@ -329,6 +403,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("E3", "4n");
           
+        }
+        else{
+          chordArr.push("E3");
         }
       }
   
@@ -338,6 +415,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("F3", "4n");
           
         }
+        else{
+          chordArr.push("F3");
+        }
       }
   
       if(p5.mouseX > 643 && p5.mouseX < 702){
@@ -345,6 +425,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("F#3", "4n");
           
+        }
+        else{
+          chordArr.push("f#3");
         }
       }
   
@@ -354,6 +437,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("G3", "4n");
           
         }
+        else{
+          chordArr.push("G3");
+        }
       }
   
       if(p5.mouseX > 793 && p5.mouseX < 851){
@@ -361,6 +447,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("G#3", "4n");
           
+        }
+        else{
+          chordArr.push("G#3");
         }
       }
   
@@ -370,6 +459,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("A3", "4n");
           
         }
+        else{
+          chordArr.push("A3");
+        }
       } 
   
       if(p5.mouseX > 926 && p5.mouseX < 957){
@@ -377,6 +469,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("A#3", "4n");
           
+        }
+        else{
+          chordArr.push("A#3");
         }
       } 
   
@@ -386,6 +481,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("B3", "4n");
           
         }
+        else{
+          chordArr.push("B3");
+        }
       } 
   
       if(p5.mouseX > 1006 && p5.mouseX < 1033){
@@ -394,6 +492,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("C4", "4n");
           
         }
+        else{
+          chordArr.push("C4");
+        }
       } 
       
       if(p5.mouseX > 1047 && p5.mouseX < 1075){
@@ -401,6 +502,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("C#4", "4n");
           
+        }
+        else{
+          chordArr.push("C#4");
         }
       } 
     }
@@ -413,6 +517,10 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("D3", "4n");
           
         }
+
+        else{
+          chordArr.push("D3");
+        }
       }
   
       if(p5.mouseX > 53 && p5.mouseX < 112){
@@ -420,6 +528,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("D#3", "4n");
           
+        }
+        else{
+          chordArr.push("D#3");
         }
       }
   
@@ -429,6 +540,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("E3", "4n");
           
         }
+        else{
+          chordArr.push("E3");
+        }
       }
   
       if(p5.mouseX > 199 && p5.mouseX < 260){
@@ -436,6 +550,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("F3", "4n");
           
+        }
+        else{
+          chordArr.push("F3");
         }
       }
     
@@ -445,6 +562,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("F#3", "4n");
           
         }
+        else{
+          chordArr.push("F#3");
+        }
       }
   
       if(p5.mouseX > 350 && p5.mouseX < 406){
@@ -452,6 +572,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("G3", "4n");
           
+        }
+        else{
+          chordArr.push("G3");
         }
       }
       
@@ -461,6 +584,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("G#3", "4n");
           
         }
+        else{
+          chordArr.push("G#3");
+        }
       }
   
       if(p5.mouseX > 497 && p5.mouseX < 557){
@@ -468,6 +594,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("A3", "4n");
           
+        }
+        else{
+          chordArr.push("A3");
         }
       }
   
@@ -477,6 +606,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("A#3", "4n");
           
         }
+        else{
+          chordArr.push("A#3");
+        }
       }
   
       if(p5.mouseX > 643 && p5.mouseX < 702){
@@ -484,6 +616,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("B3", "4n");
           
+        }
+        else{
+          chordArr.push("B3");
         }
       }
   
@@ -493,6 +628,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("C4", "4n");
           
         }
+        else{
+          chordArr.push("C4");
+        }
       }
   
       if(p5.mouseX > 793 && p5.mouseX < 851){
@@ -500,6 +638,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("C#4", "4n");
           
+        }
+        else{
+          chordArr.push("C#4");
         }
       }
   
@@ -509,6 +650,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("D4", "4n");
           
         }
+        else{
+          chordArr.push("D4");
+        }
       } 
   
       if(p5.mouseX > 926 && p5.mouseX < 957){
@@ -516,6 +660,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("D#4", "4n");
           
+        }
+        else{
+          chordArr.push("D#4");
         }
       } 
   
@@ -525,6 +672,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("E4", "4n");
           
         }
+        else{
+          chordArr.push("E4");
+        }
       } 
   
       if(p5.mouseX > 1006 && p5.mouseX < 1033){
@@ -532,6 +682,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("F4", "4n");
           
+        }
+        else{
+          chordArr.push("F4");
         }
       } 
       
@@ -541,6 +694,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("F#4", "4n");
           
         } 
+        else{
+          chordArr.push("F#4");
+        }
       }
     }
     
@@ -552,6 +708,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("G3", "4n");
           
         }
+        else{
+          chordArr.push("G3");
+        }
       }
   
       if(p5.mouseX > 53 && p5.mouseX < 112){
@@ -559,6 +718,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("G#3", "4n");
           
+        }
+        else{
+          chordArr.push("G#3");
         }
       }
   
@@ -568,6 +730,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("A3", "4n");
           
         }
+        else{
+          chordArr.push("A3");
+        }
       }
   
       if(p5.mouseX > 199 && p5.mouseX < 260){
@@ -575,6 +740,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("A#3", "4n");
           
+        }
+        else{
+          chordArr.push("A#3");
         }
       }
     
@@ -584,101 +752,140 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("B3", "4n");
           
         }
+        else{
+          chordArr.push("B3");
+        }
       }
   
       if(p5.mouseX > 350 && p5.mouseX < 406){
   
         if(!isChordMode){
-          e2.triggerAttackRelease("B#3", "4n");
+          e2.triggerAttackRelease("C4", "4n");
           
+        }
+        else{
+          chordArr.push("C4");
         }
       }
       
       if(p5.mouseX > 421 && p5.mouseX < 482){
   
         if(!isChordMode){
-          e2.triggerAttackRelease("C4", "4n");
+          e2.triggerAttackRelease("C#4", "4n");
           
+        }
+        else{
+          chordArr.push("C#4");
         }
       }
   
       if(p5.mouseX > 497 && p5.mouseX < 557){
   
         if(!isChordMode){
-          e2.triggerAttackRelease("C#4", "4n");
+          e2.triggerAttackRelease("D4", "4n");
           
+        }
+        else{
+          chordArr.push("D4");
         }
       }
   
       if(p5.mouseX > 572 && p5.mouseX < 627){
   
         if(!isChordMode){
-          e2.triggerAttackRelease("D4", "4n");
+          e2.triggerAttackRelease("D#4", "4n");
           
+        }
+        else{
+          chordArr.push("D#4");
         }
       }
   
       if(p5.mouseX > 643 && p5.mouseX < 702){
   
         if(!isChordMode){
-          e2.triggerAttackRelease("D#4", "4n");
+          e2.triggerAttackRelease("E4", "4n");
           
+        }
+        else{
+          chordArr.push("E4");
         }
       }
   
       if(p5.mouseX > 718 && p5.mouseX < 778){
   
         if(!isChordMode){
-          e2.triggerAttackRelease("E4", "4n");
+          e2.triggerAttackRelease("F4", "4n");
           
+        }
+        else{
+          chordArr.push("F4");
         }
       }
   
       if(p5.mouseX > 793 && p5.mouseX < 851){
   
         if(!isChordMode){
-          e2.triggerAttackRelease("G4", "4n");
+          e2.triggerAttackRelease("F#4", "4n");
           
+        }
+        else{
+          chordArr.push("F#4");
         }
       }
   
       if(p5.mouseX > 863 && p5.mouseX < 912){
   
         if(!isChordMode){
-          e2.triggerAttackRelease("G#4", "4n");
+          e2.triggerAttackRelease("G4", "4n");
           
+        }
+        else{
+          chordArr.push("G4");
         }
       } 
   
       if(p5.mouseX > 926 && p5.mouseX < 957){
   
         if(!isChordMode){
-          e2.triggerAttackRelease("A4", "4n");
+          e2.triggerAttackRelease("G#4", "4n");
           
+        }
+        else{
+          chordArr.push("G#4");
         }
       } 
   
       if(p5.mouseX > 972 && p5.mouseX < 994){
   
         if(!isChordMode){
-          e2.triggerAttackRelease("A#4", "4n");
+          e2.triggerAttackRelease("A4", "4n");
           
+        }
+        else{
+          chordArr.push("A4");
         }
       } 
   
       if(p5.mouseX > 1006 && p5.mouseX < 1033){
   
         if(!isChordMode){
-          e2.triggerAttackRelease("B4", "4n");
+          e2.triggerAttackRelease("A#4", "4n");
           
+        }
+        else{
+          chordArr.push("A#4");
         }
       } 
       
       if(p5.mouseX > 1047 && p5.mouseX < 1075){
   
         if(!isChordMode){
-          e2.triggerAttackRelease("B#4", "4n");
+          e2.triggerAttackRelease("B4", "4n");
           
+        }
+        else{
+          chordArr.push("B4");
         }
       } 
     }
@@ -691,6 +898,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("B3", "4n");
           
         }
+        else{
+          chordArr.push("B3");
+        }
       }
   
       if(p5.mouseX > 53 && p5.mouseX < 112){
@@ -698,6 +908,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("C4", "4n");
           
+        }
+        else{
+          chordArr.push("C4");
         }
       }
   
@@ -707,6 +920,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("C#4", "4n");
           
         }
+        else{
+          chordArr.push("C#4");
+        }
       }
   
       if(p5.mouseX > 199 && p5.mouseX < 260){
@@ -714,6 +930,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("D4", "4n");
           
+        }
+        else{
+          chordArr.push("D4");
         }
       }
     
@@ -723,6 +942,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("D#4", "4n");
           
         }
+        else{
+          chordArr.push("D#4");
+        }
       }
   
       if(p5.mouseX > 350 && p5.mouseX < 406){
@@ -730,6 +952,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("E4", "4n");
           
+        }
+        else{
+          chordArr.push("E4");
         }
       }
       
@@ -739,6 +964,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("F4", "4n");
           
         }
+        else{
+          chordArr.push("F4");
+        }
       }
   
       if(p5.mouseX > 497 && p5.mouseX < 557){
@@ -746,6 +974,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("F#4", "4n");
           
+        }
+        else{
+          chordArr.push("F#4");
         }
       }
   
@@ -755,6 +986,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("G4", "4n");
           
         }
+        else{
+          chordArr.push("G4");
+        }
       }
   
       if(p5.mouseX > 643 && p5.mouseX < 702){
@@ -762,6 +996,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("G#4", "4n");
           
+        }
+        else{
+          chordArr.push("G#4");
         }
       }
   
@@ -771,6 +1008,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("A4", "4n");
           
         }
+        else{
+          chordArr.push("A4");
+        }
       }
   
       if(p5.mouseX > 793 && p5.mouseX < 851){
@@ -778,6 +1018,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("A#4", "4n");
           
+        }
+        else{
+          chordArr.push("A#4");
         }
       }
   
@@ -787,6 +1030,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("B4", "4n");
           
         }
+        else{
+          chordArr.push("B4");
+        }
       } 
   
       if(p5.mouseX > 926 && p5.mouseX < 957){
@@ -794,6 +1040,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("C5", "4n");
           
+        }
+        else{
+          chordArr.push("C5");
         }
       } 
   
@@ -803,6 +1052,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("C#5", "4n");
           
         }
+        else{
+          chordArr.push("C#5");
+        }
       } 
   
       if(p5.mouseX > 1006 && p5.mouseX < 1033){
@@ -811,6 +1063,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("D5", "4n");
           
         }
+        else{
+          chordArr.push("D5");
+        }
       } 
       
       if(p5.mouseX > 1047 && p5.mouseX < 1075){
@@ -818,6 +1073,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("D#5", "4n");
           
+        }
+        else{
+          chordArr.push("D#5");
         }
       } 
     }
@@ -830,6 +1088,10 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("E4", "4n");
           
         }
+
+        else{
+          chordArr.push("E4");
+        }
       }
   
       if(p5.mouseX > 53 && p5.mouseX < 112){
@@ -837,6 +1099,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("F4", "4n");
           
+        }
+        else{
+          chordArr.push("F4");
         }
       }
   
@@ -846,6 +1111,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("F#4", "4n");
           
         }
+        else{
+          chordArr.push("F#4");
+        }
       }
   
       if(p5.mouseX > 199 && p5.mouseX < 260){
@@ -853,6 +1121,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("G4", "4n");
           
+        }
+        else{
+          chordArr.push("G4");
         }
       }
     
@@ -862,6 +1133,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("G#4", "4n");
           
         }
+        else{
+          chordArr.push("G#4");
+        }
       }
   
       if(p5.mouseX > 350 && p5.mouseX < 406){
@@ -869,6 +1143,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("A4", "4n");
           
+        }
+        else{
+          chordArr.push("A4");
         }
       }
       
@@ -878,6 +1155,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("A#4", "4n");
           
         }
+        else{
+          chordArr.push("A#4");
+        }
       }
   
       if(p5.mouseX > 497 && p5.mouseX < 557){
@@ -885,6 +1165,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("B4", "4n");
           
+        }
+        else{
+          chordArr.push("B4");
         }
       }
   
@@ -894,6 +1177,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("C5", "4n");
           
         }
+        else{
+          chordArr.push("C5");
+        }
       }
   
       if(p5.mouseX > 643 && p5.mouseX < 702){
@@ -901,6 +1187,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("C#5", "4n");
           
+        }
+        else{
+          chordArr.push("C#5");
         }
       }
   
@@ -910,6 +1199,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("D5", "4n");
           
         }
+        else{
+          chordArr.push("D5");
+        }
       }
   
       if(p5.mouseX > 793 && p5.mouseX < 851){
@@ -917,6 +1209,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("D#5", "4n");
           
+        }
+        else{
+          chordArr.push("D#5");
         }
       }
   
@@ -926,6 +1221,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("E5", "4n");
           
         }
+        else{
+          chordArr.push("E5");
+        }
       } 
   
       if(p5.mouseX > 926 && p5.mouseX < 957){
@@ -933,6 +1231,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("F5", "4n");
           
+        }
+        else{
+          chordArr.push("F5");
         }
       } 
   
@@ -942,6 +1243,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("F#5", "4n");
           
         }
+        else{
+          chordArr.push("F#5");
+        }
       } 
   
       if(p5.mouseX > 1006 && p5.mouseX < 1033){
@@ -950,6 +1254,9 @@ let sketch = new p5(function(p5){
           e2.triggerAttackRelease("G5", "4n");
           
         }
+        else{
+          chordArr.push("G5");
+        }
       } 
       
       if(p5.mouseX > 1047 && p5.mouseX < 1075){
@@ -957,6 +1264,9 @@ let sketch = new p5(function(p5){
         if(!isChordMode){
           e2.triggerAttackRelease("G#5", "4n");
           
+        }
+        else{
+          chordArr.push("G#5");
         }
       } 
     }
@@ -984,7 +1294,19 @@ let sketch = new p5(function(p5){
     }
 
     if(p5.dist(p5.mouseX, p5.mouseY, 937, 223) < 50 && isChordMode){
-      console.log("playing");
+
+      playChord();
+      console.log("playing " + chordArr);
+    }
+
+    if(p5.dist(p5.mouseX, p5.mouseY, 833, 223) < 30 && isChordMode){
+      chordArr.forEach(note => {
+
+        chordArr = [];
+
+      });
+
+      console.log(chordArr);
     }
   
   
@@ -1012,6 +1334,10 @@ let sketch = new p5(function(p5){
     else if (p5.dist(p5.mouseX, p5.mouseY, 937, 223) < 50 && isChordMode ) {
       p5.cursor(p5.HAND);
     }
+
+    else if(p5.dist(p5.mouseX, p5.mouseY, 833, 223) < 30 && isChordMode){
+      p5.cursor(p5.HAND);
+    }
   
     else{
       p5.cursor(p5.ARROW);
@@ -1028,6 +1354,34 @@ let sketch = new p5(function(p5){
       alert("Audio is ready");
     
     });
+  }
+
+  function playChord(){
+
+    /*let chordPart = new Tone.Part(function(time, chord){
+
+      e2.triggerAttackRelease(chord, "4n", time);
+
+    }, ["0:0", chordArr] ).start();
+
+    console.log(chordPart);
+
+    chordPart.start();
+    Tone.Transport.start();*/
+
+    let chordPart = new Tone.Part(((time, value) =>{
+
+        e2.triggerAttackRelease(value.note, "4n", time, value.velocity);
+    }), [{time: 0, note: chordArr[0], velocity: 0.9},
+    {time: "0:1", note: chordArr[1], velocity: 0.9},
+    {time: "0:2", note: chordArr[2], velocity: 0.9},
+    {time: "0:3", note: chordArr[3], velocity: 0.9},
+    {time: "0:4", note: chordArr[4], velocity: 0.9},
+    {time: "0:5", note: chordArr[5], velocity: 0.9}
+        ]).start();
+
+    Tone.Transport.start();
+
   }
 
   function switchMode(){
