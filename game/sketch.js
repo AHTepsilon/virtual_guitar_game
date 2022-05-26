@@ -87,84 +87,637 @@ let sketch = new p5(function(p5){
       } 
   
     }*/
-    
-    if(p5.mouseX > 2 && p5.mouseX < 33 && p5.mouseY > 530 & p5.mouseY < 553){
 
-      e2.triggerAttackRelease("E2", "4n");
+    if(p5.mouseY > 530 && p5.mouseY < 553){
 
-    }
+      if(p5.mouseX > 2 && p5.mouseX < 33){
 
-    if(p5.mouseX > 53 && p5.mouseX < 112 && p5.mouseY > 530 & p5.mouseY < 553){
-
-      e2.triggerAttackRelease("F2", "4n");
-
-    }
-
-    if(p5.mouseX > 127 && p5.mouseX < 183 && p5.mouseY > 530 & p5.mouseY < 553){
-
-      e2.triggerAttackRelease("F#2", "4n");
-
-    }
-
-    if(p5.mouseX > 199 && p5.mouseX < 260 && p5.mouseY > 530 & p5.mouseY < 553){
-
-      e2.triggerAttackRelease("G2", "4n");
-
-    }
+        e2.triggerAttackRelease("E2", "4n");
   
-    if(p5.mouseX > 272 && p5.mouseX < 332 && p5.mouseY > 530 & p5.mouseY < 553){
-
-      e2.triggerAttackRelease("G#2", "4n");
-
+      }
+  
+      if(p5.mouseX > 53 && p5.mouseX < 112){
+  
+        e2.triggerAttackRelease("F2", "4n");
+  
+      }
+  
+      if(p5.mouseX > 127 && p5.mouseX < 183){
+  
+        e2.triggerAttackRelease("F#2", "4n");
+  
+      }
+  
+      if(p5.mouseX > 199 && p5.mouseX < 260){
+  
+        e2.triggerAttackRelease("G2", "4n");
+  
+      }
+    
+      if(p5.mouseX > 272 && p5.mouseX < 332){
+  
+        e2.triggerAttackRelease("G#2", "4n");
+  
+      }
+  
+      if(p5.mouseX > 350 && p5.mouseX < 406){
+  
+        e2.triggerAttackRelease("A2", "4n");
+  
+      }
+      
+      if(p5.mouseX > 421 && p5.mouseX < 482){
+  
+        e2.triggerAttackRelease("A#2", "4n");
+  
+      }
+  
+      if(p5.mouseX > 497 && p5.mouseX < 557){
+  
+        e2.triggerAttackRelease("B2", "4n");
+  
+      }
+  
+      if(p5.mouseX > 572 && p5.mouseX < 627){
+  
+        e2.triggerAttackRelease("C3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 643 && p5.mouseX < 702){
+  
+        e2.triggerAttackRelease("C#3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 718 && p5.mouseX < 778){
+  
+        e2.triggerAttackRelease("D3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 793 && p5.mouseX < 851){
+  
+        e2.triggerAttackRelease("D#3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 863 && p5.mouseX < 912){
+  
+        e2.triggerAttackRelease("E3", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 926 && p5.mouseX < 957){
+  
+        e2.triggerAttackRelease("F3", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 972 && p5.mouseX < 994){
+  
+        e2.triggerAttackRelease("F#3", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 1006 && p5.mouseX < 1033){
+  
+        e2.triggerAttackRelease("G3", "4n");
+  
+      } 
+      
+      if(p5.mouseX > 1047 && p5.mouseX < 1075){
+  
+        e2.triggerAttackRelease("G#3", "4n");
+  
+      } 
     }
 
-    if(p5.mouseX > 350 && p5.mouseX < 406 && p5.mouseY > 530 & p5.mouseY < 553){
+    if(p5.mouseY > 483 && p5.mouseY < 508){
 
-      e2.triggerAttackRelease("A2", "4n");
+      if(p5.mouseX > 2 && p5.mouseX < 33){
 
+        e2.triggerAttackRelease("A2", "4n");
+  
+      }
+  
+      if(p5.mouseX > 53 && p5.mouseX < 112){
+  
+        e2.triggerAttackRelease("A#2", "4n");
+  
+      }
+  
+      if(p5.mouseX > 127 && p5.mouseX < 183){
+  
+        e2.triggerAttackRelease("B2", "4n");
+  
+      }
+  
+      if(p5.mouseX > 199 && p5.mouseX < 260){
+  
+        e2.triggerAttackRelease("C3", "4n");
+  
+      }
+    
+      if(p5.mouseX > 272 && p5.mouseX < 332){
+  
+        e2.triggerAttackRelease("C#3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 350 && p5.mouseX < 406){
+  
+        e2.triggerAttackRelease("D3", "4n");
+  
+      }
+      
+      if(p5.mouseX > 421 && p5.mouseX < 482){
+  
+        e2.triggerAttackRelease("D#3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 497 && p5.mouseX < 557){
+  
+        e2.triggerAttackRelease("E3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 572 && p5.mouseX < 627){
+  
+        e2.triggerAttackRelease("F3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 643 && p5.mouseX < 702){
+  
+        e2.triggerAttackRelease("F#3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 718 && p5.mouseX < 778){
+  
+        e2.triggerAttackRelease("G3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 793 && p5.mouseX < 851){
+  
+        e2.triggerAttackRelease("G#3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 863 && p5.mouseX < 912){
+  
+        e2.triggerAttackRelease("A3", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 926 && p5.mouseX < 957){
+  
+        e2.triggerAttackRelease("A#3", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 972 && p5.mouseX < 994){
+  
+        e2.triggerAttackRelease("B3", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 1006 && p5.mouseX < 1033){
+  
+        e2.triggerAttackRelease("C4", "4n");
+  
+      } 
+      
+      if(p5.mouseX > 1047 && p5.mouseX < 1075){
+  
+        e2.triggerAttackRelease("C#4", "4n");
+  
+      } 
+    }
+
+    
+    if(p5.mouseY > 435 && p5.mouseY < 466){
+
+      if(p5.mouseX > 2 && p5.mouseX < 33){
+
+        e2.triggerAttackRelease("D3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 53 && p5.mouseX < 112){
+  
+        e2.triggerAttackRelease("D#3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 127 && p5.mouseX < 183){
+  
+        e2.triggerAttackRelease("E3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 199 && p5.mouseX < 260){
+  
+        e2.triggerAttackRelease("F3", "4n");
+  
+      }
+    
+      if(p5.mouseX > 272 && p5.mouseX < 332){
+  
+        e2.triggerAttackRelease("F#3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 350 && p5.mouseX < 406){
+  
+        e2.triggerAttackRelease("G3", "4n");
+  
+      }
+      
+      if(p5.mouseX > 421 && p5.mouseX < 482){
+  
+        e2.triggerAttackRelease("G#3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 497 && p5.mouseX < 557){
+  
+        e2.triggerAttackRelease("A3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 572 && p5.mouseX < 627){
+  
+        e2.triggerAttackRelease("A#3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 643 && p5.mouseX < 702){
+  
+        e2.triggerAttackRelease("B3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 718 && p5.mouseX < 778){
+  
+        e2.triggerAttackRelease("C4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 793 && p5.mouseX < 851){
+  
+        e2.triggerAttackRelease("C#4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 863 && p5.mouseX < 912){
+  
+        e2.triggerAttackRelease("D4", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 926 && p5.mouseX < 957){
+  
+        e2.triggerAttackRelease("D#4", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 972 && p5.mouseX < 994){
+  
+        e2.triggerAttackRelease("E4", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 1006 && p5.mouseX < 1033){
+  
+        e2.triggerAttackRelease("F4", "4n");
+  
+      } 
+      
+      if(p5.mouseX > 1047 && p5.mouseX < 1075){
+  
+        e2.triggerAttackRelease("F#4", "4n");
+  
+      } 
     }
     
-    if(p5.mouseX > 421 && p5.mouseX < 482 && p5.mouseY > 530 & p5.mouseY < 553){
+    if(p5.mouseY > 391 && p5.mouseY < 415){
 
-      e2.triggerAttackRelease("A#2", "4n");
+      if(p5.mouseX > 2 && p5.mouseX < 33){
 
+        e2.triggerAttackRelease("G3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 53 && p5.mouseX < 112){
+  
+        e2.triggerAttackRelease("G#3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 127 && p5.mouseX < 183){
+  
+        e2.triggerAttackRelease("A3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 199 && p5.mouseX < 260){
+  
+        e2.triggerAttackRelease("A#3", "4n");
+  
+      }
+    
+      if(p5.mouseX > 272 && p5.mouseX < 332){
+  
+        e2.triggerAttackRelease("B3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 350 && p5.mouseX < 406){
+  
+        e2.triggerAttackRelease("B#3", "4n");
+  
+      }
+      
+      if(p5.mouseX > 421 && p5.mouseX < 482){
+  
+        e2.triggerAttackRelease("C4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 497 && p5.mouseX < 557){
+  
+        e2.triggerAttackRelease("C#4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 572 && p5.mouseX < 627){
+  
+        e2.triggerAttackRelease("D4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 643 && p5.mouseX < 702){
+  
+        e2.triggerAttackRelease("D#4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 718 && p5.mouseX < 778){
+  
+        e2.triggerAttackRelease("E4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 793 && p5.mouseX < 851){
+  
+        e2.triggerAttackRelease("G4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 863 && p5.mouseX < 912){
+  
+        e2.triggerAttackRelease("G#4", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 926 && p5.mouseX < 957){
+  
+        e2.triggerAttackRelease("A4", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 972 && p5.mouseX < 994){
+  
+        e2.triggerAttackRelease("A#4", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 1006 && p5.mouseX < 1033){
+  
+        e2.triggerAttackRelease("B4", "4n");
+  
+      } 
+      
+      if(p5.mouseX > 1047 && p5.mouseX < 1075){
+  
+        e2.triggerAttackRelease("B#4", "4n");
+  
+      } 
     }
 
-    if(p5.mouseX > 497 && p5.mouseX < 557 && p5.mouseY > 530 & p5.mouseY < 553){
+    if(p5.mouseY > 343 && p5.mouseY < 371){
 
-      e2.triggerAttackRelease("B2", "4n");
+      if(p5.mouseX > 2 && p5.mouseX < 33){
 
+        e2.triggerAttackRelease("B3", "4n");
+  
+      }
+  
+      if(p5.mouseX > 53 && p5.mouseX < 112){
+  
+        e2.triggerAttackRelease("C4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 127 && p5.mouseX < 183){
+  
+        e2.triggerAttackRelease("C#4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 199 && p5.mouseX < 260){
+  
+        e2.triggerAttackRelease("D4", "4n");
+  
+      }
+    
+      if(p5.mouseX > 272 && p5.mouseX < 332){
+  
+        e2.triggerAttackRelease("D#4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 350 && p5.mouseX < 406){
+  
+        e2.triggerAttackRelease("E4", "4n");
+  
+      }
+      
+      if(p5.mouseX > 421 && p5.mouseX < 482){
+  
+        e2.triggerAttackRelease("F4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 497 && p5.mouseX < 557){
+  
+        e2.triggerAttackRelease("F#4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 572 && p5.mouseX < 627){
+  
+        e2.triggerAttackRelease("G4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 643 && p5.mouseX < 702){
+  
+        e2.triggerAttackRelease("G#4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 718 && p5.mouseX < 778){
+  
+        e2.triggerAttackRelease("A4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 793 && p5.mouseX < 851){
+  
+        e2.triggerAttackRelease("A#4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 863 && p5.mouseX < 912){
+  
+        e2.triggerAttackRelease("B4", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 926 && p5.mouseX < 957){
+  
+        e2.triggerAttackRelease("C5", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 972 && p5.mouseX < 994){
+  
+        e2.triggerAttackRelease("C#5", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 1006 && p5.mouseX < 1033){
+  
+        e2.triggerAttackRelease("D5", "4n");
+  
+      } 
+      
+      if(p5.mouseX > 1047 && p5.mouseX < 1075){
+  
+        e2.triggerAttackRelease("D#5", "4n");
+  
+      } 
     }
 
-    if(p5.mouseX > 572 && p5.mouseX < 627 && p5.mouseY > 530 & p5.mouseY < 553){
+    if(p5.mouseY > 297 && p5.mouseY < 325){
 
-      e2.triggerAttackRelease("C3", "4n");
+      if(p5.mouseX > 2 && p5.mouseX < 33){
 
+        e2.triggerAttackRelease("E4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 53 && p5.mouseX < 112){
+  
+        e2.triggerAttackRelease("F4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 127 && p5.mouseX < 183){
+  
+        e2.triggerAttackRelease("F#4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 199 && p5.mouseX < 260){
+  
+        e2.triggerAttackRelease("G4", "4n");
+  
+      }
+    
+      if(p5.mouseX > 272 && p5.mouseX < 332){
+  
+        e2.triggerAttackRelease("G#4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 350 && p5.mouseX < 406){
+  
+        e2.triggerAttackRelease("A4", "4n");
+  
+      }
+      
+      if(p5.mouseX > 421 && p5.mouseX < 482){
+  
+        e2.triggerAttackRelease("A#4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 497 && p5.mouseX < 557){
+  
+        e2.triggerAttackRelease("B4", "4n");
+  
+      }
+  
+      if(p5.mouseX > 572 && p5.mouseX < 627){
+  
+        e2.triggerAttackRelease("C5", "4n");
+  
+      }
+  
+      if(p5.mouseX > 643 && p5.mouseX < 702){
+  
+        e2.triggerAttackRelease("C#5", "4n");
+  
+      }
+  
+      if(p5.mouseX > 718 && p5.mouseX < 778){
+  
+        e2.triggerAttackRelease("D5", "4n");
+  
+      }
+  
+      if(p5.mouseX > 793 && p5.mouseX < 851){
+  
+        e2.triggerAttackRelease("D#5", "4n");
+  
+      }
+  
+      if(p5.mouseX > 863 && p5.mouseX < 912){
+  
+        e2.triggerAttackRelease("E5", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 926 && p5.mouseX < 957){
+  
+        e2.triggerAttackRelease("F5", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 972 && p5.mouseX < 994){
+  
+        e2.triggerAttackRelease("F#5", "4n");
+  
+      } 
+  
+      if(p5.mouseX > 1006 && p5.mouseX < 1033){
+  
+        e2.triggerAttackRelease("G5", "4n");
+  
+      } 
+      
+      if(p5.mouseX > 1047 && p5.mouseX < 1075){
+  
+        e2.triggerAttackRelease("G#5", "4n");
+  
+      } 
     }
-
-    if(p5.mouseX > 643 && p5.mouseX < 702 && p5.mouseY > 530 & p5.mouseY < 553){
-
-      e2.triggerAttackRelease("C#3", "4n");
-
-    }
-
-    if(p5.mouseX > 718 && p5.mouseX < 778 && p5.mouseY > 530 & p5.mouseY < 553){
-
-      e2.triggerAttackRelease("D3", "4n");
-
-    }
-
-    if(p5.mouseX > 793 && p5.mouseX < 851 && p5.mouseY > 530 & p5.mouseY < 553){
-
-      e2.triggerAttackRelease("D#3", "4n");
-
-    }
-
-    if(p5.mouseX > 863 && p5.mouseX < 912 && p5.mouseY > 530 & p5.mouseY < 553){
-
-      e2.triggerAttackRelease("E3", "4n");
-
-    } 
 
     //go back
     if(p5.mouseX > 32 && p5.mouseX < 150 && p5.mouseY > 10 && p5.mouseY < 45){
