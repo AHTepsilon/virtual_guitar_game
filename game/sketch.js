@@ -56,6 +56,25 @@ function mousePressed(){
 
   }
 
+
+  //go back
+  if(mouseX > 32 && mouseX < 150 && mouseY > 10 && mouseY < 45){
+
+    console.log("Go Back");
+  }
+
+  //Change mode
+  if(mouseX > 95 && mouseX < 175 && mouseY > 215 && mouseY < 251){
+    
+    console.log("Change mode");
+  }
+2
+  //Muted
+  if (dist(mouseX, mouseY, 1000, 222) < 10 ) {
+    console.log("muted");
+  }
+
+
   /*if(mouseX > 53 && mouseX < 112 && mouseY > 299 && mouseY < 326){
 
     console.log("F4");
