@@ -7,6 +7,9 @@ let isChordMode;
 
 let startAudioBtn;
 
+let stringsArrX = [];
+let stringsArrY = [];
+
 let lowEarr = [];
 let Aarr = [];
 let Darr = [];
@@ -16,7 +19,7 @@ let highEarr = [];
 
 let chordArr = [];
 
-let e2, f2, fs2, g2, gs2, a2, as2, b2, c3, cs3, d3, ds3, e3, f3, fs3, g3, gs3, a3;
+let e2;
 
 let sketch = new p5(function(p5){
 
@@ -43,11 +46,14 @@ let sketch = new p5(function(p5){
     Barr = ["B3", "C4", "C#4", "D4", "D#4", "E4", "F4", "F#4", "G4", "G#4", "A4", "A#4", "B4", "C5", "C#5", "D5", "D#5"];
     highEarr = ["E4", "F4", "F#4", "G4", "G#4", "A4", "A#4", "B4", "C5", "C#5", "D5", "D#5", "E5", "F5", "F#5", "G5", "G#5"];
 
+    /*stringsArrX = [18, 78, 154, 304, 374, 449, 528, 597, 674, 747, 820, 888, 944, 983, 1018, 1063];
+    stringsArrY = [542, 496, 448, 402, 357, 313];*/
+
     e2 = new Tone.Synth().toDestination();
   }
   
   p5.draw = function draw() {
-    //console.log(p5.mouseX + ", " + p5.mouseY);
+    console.log(p5.mouseX + ", " + p5.mouseY);
   
     p5.loadImage("imgs/background1.png", imgBg => {
       p5.image(imgBg, interfaceX, interfaceY);
@@ -112,6 +118,18 @@ let sketch = new p5(function(p5){
       } 
   
     }*/
+
+    /*stringsArrX.forEach(fret =>{
+      stringsArrY.forEach(string =>{
+        lowEarr.forEach(note =>{
+          if(p5.dist(p5.mouseX, p5.mouseY, fret, string)){
+            if(!isChordMode){
+              e2.triggerAttackRelease(note, "4n");
+            }
+          }
+        })
+      });
+    });*/
 
     if(p5.mouseY > 530 && p5.mouseY < 553){ //Cuerda E baja
 
@@ -1346,7 +1364,7 @@ let sketch = new p5(function(p5){
   }
   
   function activateAudioProcessor(){
-    //alert("Please click the start audio button if there's no sound playing");
+    alert("Please click the start audio button if there's no sound playing");
   
     startAudioBtn.addEventListener("click", ev =>{
     
